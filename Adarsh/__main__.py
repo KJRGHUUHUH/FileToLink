@@ -59,14 +59,14 @@ async def start_services():
         asyncio.create_task(ping_server())
     print('-------------------- Initalizing Web Server -------------------------')
     app = web.AppRunner(await web_server())
-    await app.setup()
+    await app.setup()https://github.com/YTNOW/FileToLink
     bind_address = "0.0.0.0" if Var.ON_HEROKU else Var.BIND_ADRESS
     await web.TCPSite(app, bind_address, Var.PORT).start()
     print('----------------------------- DONE ---------------------------------------------------------------------')
     print('\n')
     print('---------------------------------------------------------------------------------------------------------')
     print('---------------------------------------------------------------------------------------------------------')
-    print(' follow me for more such exciting bots! https://github.com/adarsh-goel')
+    print(' follow me for more such exciting bots! https://github.com/YTNOW/FileToLink')
     print('---------------------------------------------------------------------------------------------------------')
     print('\n')
     print('----------------------- Service Started -----------------------------------------------------------------')
@@ -76,7 +76,7 @@ async def start_services():
     if Var.ON_HEROKU:
         print('                        app runnng on =>> {}'.format(Var.FQDN))
     print('---------------------------------------------------------------------------------------------------------')
-    print('Give a star to my repo https://github.com/adarsh-goel/filestreambot-pro  also follow me for new bots')
+    print('Give a star to my repo https://github.com/YTNOW/FileToLink  also follow me for new bots')
     print('---------------------------------------------------------------------------------------------------------')
     await idle()
 
